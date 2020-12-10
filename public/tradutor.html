@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>ViajaGrão</title>
+  <link rel="icon" href="images/icon.png">
+  <link href="stylesheets/custom_marco.css" rel="stylesheet">
+  <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+  
+  <script src="javascripts/jquery.min.js"></script>
+  <script src="javascripts/bootstrap.bundle.min.js"></script>
+  <script src="javascripts/translate.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-cor1 static-top">
+    <div class="container">
+      <!--a href="index.html" class="btn" aria-label="Home Page"-->
+        <a href="index.html" class="navbar-brand" aria-label="Home Page">
+        <img src="images/icon.png" width="32" height="32"  class="filter-brown" alt="Home">
+       ViajaGrão</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="/index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/chatbot.html">Chatbot</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/tradutor.html">Tradutor</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+
+  
+  
+  <div class="container">
+    <div class="row my-5"> 
+      <div class="dropdown show px-5">
+        Traduzir de 
+        <div class="btn-group p-1">
+          <button id="btn_lang1" class="btn bg-cor2 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English
+          </button>
+          <div id="drop1" class="dropdown-menu">
+          </div>
+        </div>
+         <row class="p-1">para </row>
+        <div class="btn-group">
+          <button id="btn_lang2" class="btn bg-cor2 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Portugues
+          </button>
+          <div id="drop2" class="dropdown-menu">
+          </div>
+        </div>
+        
+      </div>
+      <button type="button" class="btn btn-primary" onclick="update_traduzir();">Traduzir</button>
+
+      <div class="form-group my-3 text-center col-lg-12">
+        <textarea style="resize: none"  onkeydown="update_keydown(event);" class="form-control" id="input_text" rows="7" cols="60" placeholder="Insira texto.."></textarea>
+      </div>
+      <div class="form-group text-center col-lg-12">
+        <textarea readonly style="resize: none" class="form-control" id="output_text" rows="7" cols="60" placeholder="Tradução."></textarea>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+</body>
+
+</html>
