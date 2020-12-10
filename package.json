@@ -12,7 +12,8 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "ibm-watson": "^5.7.1",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "@types/node": "^14.14.11"
